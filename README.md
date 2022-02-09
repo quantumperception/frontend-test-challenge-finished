@@ -11,7 +11,6 @@ Esta app está rota intencionalmente, y hay 6 puntos críticos que el candidato 
 
 ## Para correr el proyecto
 
-Instalar dependencias: `npm install`.
-Correr el proyecto: `npm start`.
+Instalar dependencias: `npm install`. Correr el proyecto: `npm start`.
 
 Puedes encontrar un demo funcional de lo que se espera en https://react-todo-context-working.herokuapp.com/
