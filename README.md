@@ -14,3 +14,10 @@ Esta app está rota intencionalmente, y hay 6 puntos críticos que el candidato 
 Instalar dependencias: `npm install`. Correr el proyecto: `npm start`.
 
 Puedes encontrar un demo funcional de lo que se espera en https://react-todo-context-working.herokuapp.com/
+
+
+## Condiciones de entrega
+
+Sube tu respuesta a un repositorio nuevo con acceso público y compártelo vía mail a bdiaz@enerlink.cl. El plazo de entrega es de 3 días hábiles desde que recibiste la invitación, pero cuéntanos si necesitas más flexibilidad.
+
+Éxito y diviértete!
