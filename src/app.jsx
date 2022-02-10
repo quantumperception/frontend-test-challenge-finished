@@ -38,12 +38,23 @@ const todosTemplate = [
   },
 ];
 
+const LOCAL_STORAGE_KEY = 'todoApp.todos';
+
 export const App = () => {
-  const [todos, setTodos] = React.useState([]);
+  const [todos, setTodos] = React.useState(todosTemplate);
+
+  React.useEffect(() => {
+    const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+    if (storedTodos) { setTodos(storedTodos); }
+  }, []);
+
+  React.useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div className="root">
-      <TodosContext.Provider value={{ todos }}>
+      <TodosContext.Provider value={{ todos, setTodos }}>
         <TodoList />
         <TodoResults />
         <TodoForm />

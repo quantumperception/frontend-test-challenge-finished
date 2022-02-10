@@ -5,13 +5,17 @@ import './todo-list.scss';
 
 export const TodoList = () => {
   const { todos, setTodos } = React.useContext(TodosContext);
+  const { checked, setChecked } = React.useState(false);
 
   const handleDelete = (id) => {
-    // Fix an ability to delete task
+    setTodos((currentTodos) => currentTodos.filter((todo) => todo.id !== id));
   };
 
   const toggleCheck = (id) => {
-    // Fix an ability to toggle task
+    const newTodos = [...todos];
+    const currentTodo = newTodos.find((todo) => todo.id === id);
+    currentTodo.checked = !currentTodo.checked;
+    setTodos(newTodos);
   };
 
   const handleKeyUp = (e, id) => {
