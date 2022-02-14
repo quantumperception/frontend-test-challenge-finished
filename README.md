@@ -1,23 +1,16 @@
 # React TODO app con Context API
 
-Esta app está rota intencionalmente, y hay 6 puntos críticos que el candidato debe reparar:
+Esta app estaba rota intencionalmente, y hay 6 puntos críticos que el candidato ha reparado:
 
-1. Reparar la capacidad de mostrar todas las tareas.
-2. Reparar el layout, checkboxes deben estar listados en una columna.
-3. Reparar la capacidad de añadir nuevas tareas.
-4. Reparar la capacidad de activar/desactivar una tarea.
-5. Reparar la capacidad de eliminar una tarea.
-6. Reparar el contador de tareas terminadas.
+1. Reparada la capacidad de mostrar todas las tareas.
+2. Reparado el layout, checkboxes ahora están listados en una columna.
+3. Reparada la capacidad de añadir nuevas tareas.
+4. Reparada la capacidad de activar/desactivar una tarea.
+5. Reparada la capacidad de eliminar una tarea.
+6. Reparado el contador de tareas terminadas.
+
+7. Además, se añadió persistencia de las tareas al recargar la página.
 
 ## Para correr el proyecto
 
 Instalar dependencias: `npm install`. Correr el proyecto: `npm start`.
-
-Puedes encontrar un demo funcional de lo que se espera en https://react-todo-context-working.herokuapp.com/
-
-
-## Condiciones de entrega
-
-Sube tu respuesta a un repositorio nuevo con acceso público y compártelo vía mail a bdiaz@enerlink.cl. El plazo de entrega es de 3 días hábiles desde que recibiste la invitación, pero cuéntanos si necesitas más flexibilidad.
-
-Éxito y diviértete!

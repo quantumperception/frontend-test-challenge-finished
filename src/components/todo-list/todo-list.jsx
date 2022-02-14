@@ -5,7 +5,6 @@ import './todo-list.scss';
 
 export const TodoList = () => {
   const { todos, setTodos } = React.useContext(TodosContext);
-  const { checked, setChecked } = React.useState(false);
 
   const handleDelete = (id) => {
     setTodos((currentTodos) => currentTodos.filter((todo) => todo.id !== id));

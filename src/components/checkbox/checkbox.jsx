@@ -13,7 +13,7 @@ export const Checkbox = ({
       onClick={onClick}
       onKeyUp={onKeyUp}
     >
-      <input tabIndex="-1" type="checkbox" checked={checked} />
+      <input tabIndex="-1" type="checkbox" checked={checked} readOnly />
       <span className={checked ? 'checkbox-checked' : ''}>{label}</span>
     </div>
     <button type="button" className="checkbox-delete" onClick={onDelete}>

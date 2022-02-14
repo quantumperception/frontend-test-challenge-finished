@@ -3,15 +3,17 @@ import { TodosContext } from '../../todo-context';
 import './todo-form.scss';
 
 export const TodoForm = () => {
-  const { todos, setTodos } = React.useContext(TodosContext);
+  const { setTodos } = React.useContext(TodosContext);
   const [task, setTask] = React.useState('');
-
   const handleAddTodo = () => {
+  if (!task || task === '') { return; /* todo: display "Task can't be empty" */ }
     setTodos((currentTodos) => [...currentTodos, {
       id: currentTodos.length ? currentTodos.at(-1).id + 1 : 0,
       label: task,
       checked: false,
     }]);
+    setTask('');
+    document.getElementById('formInput').focus();
   };
 
   const handleKeyUp = (e) => {
@@ -23,6 +25,7 @@ export const TodoForm = () => {
   return (
     <div className="todo-form">
       <input
+        id="formInput"
         placeholder="Enter new task"
         value={task}
         onChange={(e) => setTask(e.target.value)}
